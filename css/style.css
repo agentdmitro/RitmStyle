@@ -423,8 +423,8 @@ body:not(.home_page) > .wrapper > .footer > .footer__inner {
   transition: all 0s linear;
   margin-top: 20px;
   font-weight: 200;
-  font-size: 1em;
-  line-height: 140%;
+  font-size: 1.2em;
+  line-height: 160%;
 }
 
 .reviews__slide-text > p + p {
@@ -440,7 +440,7 @@ body:not(.home_page) > .wrapper > .footer > .footer__inner {
 }
 
 .swiper-slide-active > .reviews__slide-inner > .reviews__slide-text {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .swiper-slide-active {
@@ -716,7 +716,7 @@ body:not(.home_page) > .wrapper > .footer > .footer__inner {
   right: 0;
   background: rgba(13, 17, 23, 0.9);
   display: none;
-  z-index: 10;
+  z-index: 12;
 }
 
 .bg-menu2 {
