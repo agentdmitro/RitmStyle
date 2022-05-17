@@ -45,28 +45,15 @@ $(document).ready(function() {
 
 // popup
 
-function bgRemove() {
-  $('.bg-menu').removeClass('show');
-}
-function bgAdd() {
-  $('.bg-menu').toggleClass('show');
-}
 
-$('.contact__btn').click(function (e) {
-  e.preventDefault();
+$('.contact__btn').on('click', function(e) {
   $('.popup.contacts__popup').addClass('show');
-  bgAdd();
-});
+  $('.bg-menu').addClass('show');
+})
 
-	
-$('.bg-menu').click(function () {
+$('.bg-menu , .close').on('click', function(e) {
   $('.popup').removeClass('show');
-  bgRemove();
-});
-$('.close').click(function (e) {
-  e.preventDefault();
-  $('.popup').removeClass('show');
-  bgRemove();
+  $('.bg-menu').removeClass('show');
 });
 
 
@@ -74,5 +61,4 @@ $('.close').click(function (e) {
 $('.header__menu-item').each(function(){
     $(this).click(function(){
         location = $(this).find('a').attr('href');});
-    $(this).css('cursor','pointer');
 });

@@ -219,6 +219,10 @@ body:not(.home_page) > .wrapper > .footer > .footer__inner {
           align-items: center;
 }
 
+.header__menu > li {
+  cursor: pointer;
+}
+
 .header__menu > li + li {
   margin-left: 50px;
 }
